@@ -7,11 +7,6 @@
   </url>
   
   <url>
-    <loc>https://aaronguo1996.github.io/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://aaronguo1996.github.io/authors/</loc>
     <priority>0</priority>
   </url>
@@ -40,6 +35,11 @@
   
   <url>
     <loc>https://aaronguo1996.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aaronguo1996.github.io/</loc>
     <priority>0</priority>
   </url>
   
