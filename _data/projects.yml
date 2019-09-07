@@ -2,5 +2,5 @@
   desc: A type-driven synthesis engine for Haskell - like Hoogle but able to find compositions of functions.
   demo: http://goto.ucsd.edu/hoogle_plus
   repo: https://github.com/davidmrdavid/hoogle_plus
-  paper: http://cseweb.ucsd.edu/~npolikarpova/publications/hplus.pdf
+  paper: assets/papers/hplus.pdf
   pic: hplus.png
