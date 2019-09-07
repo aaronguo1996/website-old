@@ -1,0 +1,14 @@
+- name: Program Synthesis by Type-Guided Abstraction Refinement
+  authors:
+    - Zheng Guo
+    - David Justo
+    - Michale James
+    - Jiaxiao Zhou
+    - Ziteng Wang
+    - Ranjit Jhala
+    - Nadia Polikarpova
+  conference: the 47th ACM SIGPLAN Symposium on Principles of Programming Languages
+  conf: POPL
+  confLink: https://popl20.sigplan.org/
+  year: 2020
+  link: http://cseweb.ucsd.edu/~npolikarpova/publications/hplus.pdf

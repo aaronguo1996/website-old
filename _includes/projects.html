@@ -1,0 +1,30 @@
+<h4>Projects</h4>
+{% for project in site.data.projects %}
+    {% assign mod = forloop.index | modulo: 3 %}
+    {% if mod == 1 %}
+        <div class="row">
+    {% endif %}
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{project.name}}</h5>
+                <p class="card-text">{{project.desc}}</p>
+                <a href="{{project.demo}}" class="btn btn-outline-primary btn-sm">
+                    <i class="fa fa-magic"></i>
+                    Demo
+                </a>
+                <a href="{{project.repo}}" class="btn btn-outline-primary btn-sm">
+                    <i class="fa fa-github"></i>
+                    Repo
+                </a>
+                <a href="{{project.paper}}" class="btn btn-outline-primary btn-sm">
+                    <i class="fa fa-file-pdf-o"></i>
+                    Paper
+                </a>
+            </div>
+        </div>
+    </div>
+    {% if mod == 1 %}
+        </div>
+    {% endif %}
+{% endfor %}

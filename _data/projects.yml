@@ -1,0 +1,5 @@
+- name: hoogle+
+  desc: type-driven component-based synthesis for Haskell
+  demo: http://goto.ucsd.edu/hoogle_plus
+  repo: https://github.com/davidmrdavid/hoogle_plus
+  paper: http://cseweb.ucsd.edu/~npolikarpova/publications/hplus.pdf
