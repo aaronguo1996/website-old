@@ -1,23 +1,36 @@
 <h4>Publications</h4>
+{% assign cnt = 0 %}
 {% for pub in site.data.publications %}
-    <div class="container line">
-        <a class="font-weight-bold" href="{{pub.link}}">{{pub.name}}</a><br>
-        <span>
-            {% for a in pub.authors %}
-            {{a}}{% if forloop.last %}.{% else %}, {% endif %}
-        {% endfor %}</span><br>
-        <span class="smaller">
-            In {{pub.conference}} (<span class="font-weight-bold smaller">{{pub.conf}} {{pub.year}}</span>)
-        </span><br>
-        <span class="smaller">
-            <a href="{{project.paper}}" class="btn btn-outline-primary btn-sm">
-                <i class="fa fa-file-pdf-o"></i>
-                PDF
-            </a>
-            <a href="{{project.repo}}" class="btn btn-outline-primary btn-sm">
-                <i class="fa fa-files-o"></i>
-                Slides
-            </a>
-        </span>
-    </div>
+    {% if pub.status != "in submission" %}
+        {% assign cnt = cnt | plus: 1 %}
+        <div class="container line">
+            <a class="font-weight-bold" href="{{pub.link}}">{{pub.name}}</a>
+            {% if pub.status %}
+                (in submission)
+            {% endif %}
+            <br>
+            <span>
+                {% for a in pub.authors %}
+                {{a}}{% if forloop.last %}.{% else %}, {% endif %}
+            {% endfor %}</span><br>
+            {% if pub.status != 'in submission' %}
+                <span class="smaller">
+                    In {{pub.conference}} (<span class="font-weight-bold smaller">{{pub.conf}} {{pub.year}}</span>)
+                </span><br>
+                <span class="smaller">
+                    <a href="{{project.paper}}" class="btn btn-outline-primary btn-sm">
+                        <i class="fa fa-file-pdf-o"></i>
+                        PDF
+                    </a>
+                    <a href="{{project.repo}}" class="btn btn-outline-primary btn-sm">
+                        <i class="fa fa-files-o"></i>
+                        Slides
+                    </a>
+                </span>
+            {% endif %}
+        </div>
+    {% endif %}
 {% endfor %}
+{% if cnt == 0 %}
+    No publication yet
+{% endif %}

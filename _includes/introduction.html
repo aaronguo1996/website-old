@@ -1,0 +1,30 @@
+<div class="card mb-3 border-0">
+  <div class="row no-gutters">
+    <div class="col-md-3 align-middle align-items-center">
+      <img src="assets/images/me.jpeg" class="card-img rounded-circle" alt="">
+    </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <h4 class="card-title">{{site.data.profile.name}}</h4>
+        <p class="card-text">
+            <i class="fa fa-envelope-o"></i>
+            <a href="#">{{site.data.profile.email}}</a>
+            <br>
+            <i class="fa fa-file-text-o"></i>
+            <a href="#"> CV</a>
+            <i class="fa fa-twitter"></i>
+            <a href="https://twitter.com/AaronGuo069">Twitter</a>
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/aaronguo1996">Github</a>
+        </p>
+        <p class="card-text">
+            {% capture my_include %}{% include introduction.md %}{% endcapture %}
+            {{ my_include | markdownify }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+      I am interested in using programming language techniques to automate programming tasks. Currently, I focus on synthesis tools that generate programs with given specifications, work to make the automated search scale to real-world need and try to infer human intentions from limited information.
+  </div>
+</div>

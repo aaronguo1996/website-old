@@ -6,17 +6,17 @@ title: Zheng Guo
 ---
 <div class="container body">
     <div class="container">
-        {% include_relative introduction.markdown %}
+        {% include introduction.html %}
     </div>
-    <hr class="my-4">
+    <hr>
     <div class="container" id="projects">
         {% include projects.html %}
     </div>
-    <hr class="my-4">
+    <hr>
     <div class="container" id="publications">
         {% include publications.html %}
     </div>
-    <hr class="my-4">
+    <hr>
     <div class="container" id="teaching">
         {% include teachings.html %}
     </div>
