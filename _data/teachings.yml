@@ -1,8 +1,8 @@
-- courseId: CSE 130-230
-  courseName: Programming Languages
+- courseId: COGS 18
+  courseName: Introduction to Python
   role: Teaching Assistant
   school: UC San Diego
-  time: Fall 2018
+  time: Summer 2019
 
 - courseId: CSE 231
   courseName: Advanced Compilers
@@ -10,8 +10,8 @@
   school: UC San Diego
   time: Winter 2018
 
-- courseId: COGS 18
-  courseName: Introduction to Python
+- courseId: CSE 130-230
+  courseName: Programming Languages
   role: Teaching Assistant
   school: UC San Diego
-  time: Summer 2019
+  time: Fall 2018
